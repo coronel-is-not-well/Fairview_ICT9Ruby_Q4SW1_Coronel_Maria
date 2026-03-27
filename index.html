@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q4 Seatwork</title>
+
+<style>
+
+    body{background-image: url(https://www.playadopt.me/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fd4ypzn9i%2Fproduction%2F8fd47308656a31c50936a832a6633d69426d0f65-1920x1080.png&w=1920&q=75);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+    .formm{background-color: rgb(255, 255, 255);
+    padding: 30px;
+    margin: 50px;
+    border-radius: 30px;}
+
+</style>
+
 </head>
 <body>
+
+<div class="formm">
+
+<img src="https://new-production-adopt-me.s3.amazonaws.com/media/site_meta/adopt-me-logo_2.png" alt="logo" width="auto" height="200" style="text-align: center;">
+
+<h1>Log In your account in Adopt Me!</h1>
+
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" placeholder="a5b0da@gmail.com">
+
+<br><br>
+
+<label for="password">Password:</label><br>
+<input type="password" id="password" name="password" placeholder="iloveAdoptMe123">
+
+<br><br>
+
+<input type="checkbox" id="stay" name="stay" value="stay">
+<label for="stay">Remember me</label>
+
+<br><br>
+<button>Log In</button>
+
+</div>
     
     <script>
 //Use if-else statement for username and password verification. Use  === comparison operator and AND operator to check if condition is TRUE.
@@ -13,8 +52,11 @@
 
 //Use Switch Code for the checkbox
 
-function function_name_here() {
-        let variable_name= document.getElementById("checkboxID").checked; 
+   
+
+
+function stay1() {
+        let stay= document.getElementById("stay").checked; 
          //when checked, it reads true
 
         switch(variable_name) {
