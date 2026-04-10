@@ -17,6 +17,16 @@
     margin: 50px;
     border-radius: 30px;}
 
+    #message{background-color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 50px;
+            border-radius: 30px;}
+
+    img{display: block;
+  margin-left: auto;
+  margin-right: auto;}
+
 </style>
 
 </head>
@@ -42,9 +52,11 @@
 <label for="stay">Remember me</label>
 
 <br><br>
-<button>Log In</button>
+<button onclick="login()">Log In</button>
 
 </div>
+
+<p id="message"></p>
     
     <script>
 //Use if-else statement for username and password verification. Use  === comparison operator and AND operator to check if condition is TRUE.
@@ -52,25 +64,38 @@
 
 //Use Switch Code for the checkbox
 
-   
+function login(){ 
+    
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var result;
 
+    if (email === "a5b0da@gmail.com" && password === "iloveAdoptMe123")
+    result = true;
+    else
+    result = false;
 
-function stay1() {
-        let stay= document.getElementById("stay").checked; 
+    let stay= document.getElementById("stay").checked; 
          //when checked, it reads true
 
-        switch(variable_name) {
+        switch(result) {
             case true:
-                //use innerHTML to display a message
+                document.getElementById("message").innerHTML = "Succesfully logged in!";
             break;
 
             case false:
-                //use innerHTML to show nothing. use quotation;
+                document.getElementById("message").innerHTML = "Email or password incorrect.";
             break;
 
             //default may almost never needed since there is already true and false statement;
  }
+
+
+
+
 }
+
+
 </script>
 
 
